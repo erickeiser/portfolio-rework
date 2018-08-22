@@ -1,0 +1,197 @@
+body {
+  background: #ccc;
+  margin: 0 18px;
+}
+
+.row {
+  margin-top: 2em;
+}
+
+.col {
+  border: .1px solid rgb(11, 79, 180);
+  /* border-radius: 180px; */
+  background: rgb(21, 89, 190);
+  color: #ccc;
+  text-align: center;
+  padding: 1.5em;
+}
+
+img {
+  height: 30%;
+  width: 30%;
+  justify-content: left;
+}
+
+/*****************
+ BUTTON BACKGROUND
+*********************/
+
+ #home-target {
+  background: yellow;
+}
+
+#skills-target {
+  background: green;
+}
+
+.resume {
+  background: rgb(21,89,190);
+}
+
+.work {
+  background: orange;
+}
+
+.contact {
+  background: purple;
+}
+
+/************
+Home Content
+*************/
+
+.home-content {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 35px;
+  font-size: 25px;
+}
+/****************************** 
+Home Content - Photo Gallery
+*******************************/
+
+.wrapper {
+display:grid;  
+grid-template-rows: auto;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+grid-gap:3px;
+background-color: #ccc;
+max-width:1200px;
+margin: 0 auto;
+}
+
+.box {
+background-position:center center;
+background-size:cover;
+border:1px solid #f4f4f4;
+min-height:200px;
+}
+
+.box:nth-child(1) {
+background-image: url('../../img/mainGallery/hands.jpeg');  
+}
+
+.box:nth-child(2) {
+background-image: url('../../img/mainGallery/moon.jpeg');   
+}
+
+.box:nth-child(3) {
+background-image: url('../../img/mainGallery/camera.jpeg');  
+grid-column: auto / span 2;
+}
+
+.box:nth-child(4) {
+background-image: url('../../img/mainGallery/mountain.jpeg');  
+}
+.box:nth-child(5) {
+background-image: url('../../img/mainGallery/dollar.png'); 
+grid-column: auto / span 2;
+}
+
+.box:nth-child(6) {
+background-image: url('../../img/mainGallery/skull.jpeg');   
+grid-column: auto / span 2;
+grid-row: auto / span 2;
+}
+
+.box:nth-child(7) {
+background-image: url('../../img/mainGallery/puzzle.jpeg');  
+}
+
+.box:nth-child(8) {
+background-image: url('../../img/mainGallery/fence.jpeg');   
+}
+
+.box:nth-child(9) {
+background-image: url('../../img/mainGallery/parking.jpeg');  
+}
+
+.box:nth-child(10) {
+background-image: url('../../img/mainGallery/city.jpeg');   
+}
+.box:nth-child(11) {
+background-image: url('../../img/mainGallery/square.jpeg');  
+}
+
+.box:nth-child(12) {
+background-image: url('../../img/mainGallery/engine.jpeg'); 
+/* grid-column: auto /span 3; */
+/* grid-row: auto / span 2; */
+}
+
+.box:nth-child(13) {
+background-image: url('../../img/mainGallery/piano.jpeg');  
+grid-column: auto / span 3;
+}
+
+.box:nth-child(14) {
+background-image: url('../../img/mainGallery/road.jpg');   
+}
+.box:nth-child(15) {
+background-image: url('../../img/mainGallery/rings.jpg');  
+}
+
+.box:nth-child(16) {
+background-image: url('../../img/mainGallery/band.jpg');   
+}
+
+.box:nth-child(17) {
+background-image: url('../../img/mainGallery/bean.jpeg');  
+}
+
+.box:nth-child(18) {
+background-image: url('../../img/mainGallery/water.jpeg'); 
+}
+
+.box:nth-child(19) {
+background-image: url('../../img/mainGallery/weight.jpeg');  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1214px) {
+  .wrapper {
+  margin: 0 15px;
+  }
+}
+
+@media screen and (max-width:1069px) {
+.box:nth-child(19) {  
+    grid-column: auto / span 4;
+    grid-row: auto / span 2;  
+ }
+}
+
+@media screen and (max-width:650px) {
+  .box {
+  grid-column: auto / span 1 !important;
+  grid-row: auto / span 1 !important;
+  }
+}
+
+  
+
+
+
+
